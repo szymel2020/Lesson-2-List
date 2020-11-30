@@ -27,7 +27,8 @@ button {
 }
 
 #headerTitle {
-	text-align: center;
+	text-align: justify;
+	text-align:center;
 	width: 19em;
 	height: 19em;
 	background-color: grey;
@@ -35,17 +36,28 @@ button {
 	padding: .6em;
 	margin: auto;
 	border: .2em pink solid;
+}
+
+h1 {
+	width:420px;
+	margin: auto;
+	padding-left: 1em;
+	text-align: center;
 	letter-spacing: 1.6em;
 }
 
 .firstDiv {
 	width: 420px;
-	height: 420px;
+	height: 400px;
 	margin: auto;
 	background-color:aqua;
 }
 
 footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 	font-size: .12em;
 	margin: .82em;
 	padding: .1em;
