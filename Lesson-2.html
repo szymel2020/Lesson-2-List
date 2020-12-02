@@ -11,7 +11,10 @@
  <body>
  <div class="containerLeft">
 	<button class="openList">open list</button>
-	<button>button</button>
+	<form id="addForm">
+	<input type="text" id="inputAdd" placeholder="write something" />
+	<input type="submit" id="buttonAdd" value="Add element">
+	</form>
 	<button>button</button>
 	<button>button</button>
 	<button>button</button>
@@ -20,8 +23,13 @@
  	</div>
  
 	<div id="headerTitle">
-	<h1>List</h1>
-	<div class="firstDiv"></div>
+		<h1>List</h1>
+
+		<div class="firstDiv">
+		 <ul id="items" class="list-group">
+				<li class="list-group"><button class="btn btn-danger btn-sm float-right delete">x</button></li>
+			</ul>
+		</div>
 	</div>
 	
 	<footer>copyright 26.11.2020 all rights reserved</footer>

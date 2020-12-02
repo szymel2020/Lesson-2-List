@@ -53,6 +53,12 @@ h1 {
 	background-color:aqua;
 }
 
+.list-group {
+	list-style-type: none;
+	text-decoration: none;
+	color: grey;
+}
+
 footer {
 	display: flex;
 	align-items: center;
