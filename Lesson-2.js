@@ -5,10 +5,11 @@ $(function () {
 });
 
 // Add new elements List
-var form = document.getElementById('addForm')
+var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
 var inputValue = document.getElementById('inputAdd');
 var buttonPlus = document.getElementById('buttonAdd');
+
 
 form.addEventListener('submit', runPlus);
 // Delete elements
@@ -54,12 +55,12 @@ function runPlus(e) {
 	itemList.appendChild(li).style.color = colorFonts[Math.random() * colorFonts.length << 0];
 };
 
-	// Remove item
-	function removeItem(e) {
-		if (e.target.classList.contains('delete')) {
-			if (confirm('Are you SURE ? ? ?')) {
-				var li = e.target.parentElement;
-				itemList.removeChild(li);
-			}
+// Remove item
+function removeItem(e) {
+	if (e.target.classList.contains('delete')) {
+		if (confirm('Are you SURE ? ? ?')) {
+			var li = e.target.parentElement;
+			itemList.removeChild(li);
 		}
-	};
+	}
+};

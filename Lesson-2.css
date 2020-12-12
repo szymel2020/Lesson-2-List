@@ -7,6 +7,19 @@ body {
 	margin: .2em;
 }
 
+.text1 {
+	font-size: 0.08em;
+	letter-spacing: 0.2em;
+	color:purple;
+	margin: auto;
+	padding: auto;
+	text-transform: lowercase;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-weight: bold; 
+	text-shadow: -.2px 1px 4px  white;
+	writing-mode: vertical-rl;
+}
+
 .containerLeft {
 	display: flex;
 	flex-direction: column;
@@ -40,24 +53,26 @@ button {
 h1 {
 	display: flex;
 	align-items: center;
-	background-color: grey;
+	background-color: antiquewhite;
 	width:420px;
 	margin: auto;
 	padding: auto;
-	letter-spacing: 2em;
-	transition: letter-spacing 5s; 
+	letter-spacing: .2em;
 }
 
+/*
 h1:hover {
-	letter-spacing: .2em;
+	letter-spacing: 2em;
 	background-color: aqua;
 }
+*/
 
 .firstDiv {
 	width: 420px;
 	height: 400px;
 	margin: auto;
-	background-color:aqua;
+	background-color:antiquewhite;
+	overflow: scroll;
 }
 
 .list-group {
