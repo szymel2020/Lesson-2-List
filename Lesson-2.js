@@ -1,3 +1,4 @@
+//Button open the List
 $(function () {
 	$(".openList").click(function () {
 		$(".firstDiv").toggle(1500);
@@ -23,6 +24,7 @@ itemList.addEventListener('click', removeItem);
 	document.querySelector('ul').style.color = colorFonts[Math.random()*colorFonts.length <<0];
 }*/
 
+//Button add 'li' and change color
 function runPlus(e) {
 	e.preventDefault();
 
@@ -43,7 +45,7 @@ function runPlus(e) {
 
 	// Add classes to del button
 	deleteBtn.className = 'btn btn-danger btn-sm float-right delete';
-
+	
 	// Append text node
 	deleteBtn.appendChild(document.createTextNode('x'));
 
@@ -55,7 +57,7 @@ function runPlus(e) {
 	itemList.appendChild(li).style.color = colorFonts[Math.random() * colorFonts.length << 0];
 };
 
-// Remove item
+// Remove item, push 'x' and delete 'li'.
 function removeItem(e) {
 	if (e.target.classList.contains('delete')) {
 		if (confirm('Are you SURE ? ? ?')) {
@@ -63,4 +65,49 @@ function removeItem(e) {
 			itemList.removeChild(li);
 		}
 	}
+};
+
+function pushDark() {
+	let bg = document.getElementById("body");
+	let openList = document.getElementById("openList");
+	let button = document.getElementById("btnDark");
+	let btn1 = document.getElementById("btn1");
+	let btn2 = document.getElementById("btn2");
+	let btn3 = document.getElementById("btn3");
+	//let btn4 = document.getElementById("btn4");
+	//let btn5 = document.getElementById("items");
+	if (bg.style.backgroundColor == "purple") {
+		bg.style.backgroundColor = "white";
+		button.style.backgroundColor = "black";
+		button.style.color = "white";
+		openList.style.backgroundColor = "black";
+		openList.style.color = "white";
+		btn1.style.backgroundColor = "black";
+		btn1.style.color = "white";
+		btn2.style.backgroundColor = "black";
+		btn2.style.color = "white";
+		btn3.style.backgroundColor = "black";
+		btn3.style.color = "white";
+		//btn4.style.backgroundColor = "black";
+		//btn4.style.color = "white";
+		//btn5.style.backgroundColor = "black";
+		//btn5.style.color = "white";
+
+	} else {
+		bg.style.backgroundColor = " purple";
+		button.style.backgroundColor = "#ffac15";
+		button.style.color = "black";
+		openList.style.backgroundColor = "#ffac15";
+		openList.style.color = "black";
+		btn1.style.backgroundColor = "#ffac15";
+		btn1.style.color = "black";
+		btn2.style.backgroundColor = "#ffac15";
+		btn2.style.color = "black";
+		btn3.style.backgroundColor = "#ffac15";
+		btn3.style.color = "black";
+		//btn4.style.backgroundColor = "#ffac15";
+		//btn4.style.color = "black";
+		//btn5.style.backgroundColor = "#ffac15";
+		//btn5.style.color = "black";
+	};
 };
