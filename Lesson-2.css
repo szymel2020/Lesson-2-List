@@ -119,6 +119,7 @@ h1:hover {
 	font-size: .5em;
 	font-family: 'Source Code Pro', monospace;
 	font-weight: bold;
+	box-shadow: .3em .4em 2em grey;
 }
 
 footer {
