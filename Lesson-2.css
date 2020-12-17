@@ -1,7 +1,7 @@
 body {
 	display: flex;
 	flex-wrap: wrap;
-	background:  purple ;
+	background: purple;
 	font-size: 16em;
 	margin: .2em;
 }
@@ -30,6 +30,7 @@ body {
 	height: 19em;
 	padding: .6em;
 	margin: auto;
+	box-shadow: 1em .7em .62em grey;
 }
 
 #inputAdd {
@@ -54,17 +55,18 @@ button {
 	text-align: center;
 	width: 19em;
 	height: 19em;
-	background-color: grey;
+	background-image: linear-gradient(to bottom right, coral 15%, black, yellow 95%);
 	font-size: .1em;
 	padding: .6em;
 	margin: auto;
 	border: .2em pink solid;
+	box-shadow: 1em .7em .62em grey;
 }
 
 h1 {
 	display: flex;
 	align-items: center;
-	background-color: antiquewhite;
+	background: rgba(255, 127, 80, 1);
 	width: 420px;
 	margin: auto;
 	padding: auto;
@@ -72,12 +74,13 @@ h1 {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: bold;
 	text-transform: lowercase;
-	transition: letter-spacing 2s, background-color 3s;
+	transition: letter-spacing 2s, background 3s, color 3s;
 }
 
 h1:hover {
-	letter-spacing: 2em;
-	background-color: grey;
+	color: yellow;
+	letter-spacing: 1.9em;
+	background: rgba(255, 127, 80, 0.01 );
 }
 
 .firstDiv {
