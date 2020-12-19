@@ -22,7 +22,8 @@ body {
 .containerLeft {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
+	text-align: center;
 	align-items: center;
 	border: .2em pink solid;
 	font-size: .1em;
@@ -33,6 +34,11 @@ body {
 	box-shadow: 1em .7em .62em grey;
 }
 
+#addForm {
+	display: flex;
+	align-items:center
+}
+
 #inputAdd {
 	color: white;
 	font-size: .8em;
@@ -40,9 +46,23 @@ body {
 	word-spacing: 2em;
 	letter-spacing: .5em;
 	background-color: black;
-	height: 3em;
+	height: 1.5em;
 	width: 18em;
 	text-align: center;
+}
+
+#buttonAdd {
+	border-radius: 100%;
+	margin: .2em;
+	padding: .2em;
+	width: 2em;
+	font-size: 1.5em;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+		align-items: baseline;
+	color: white;
+	background: black;
 }
 
 button {
@@ -121,7 +141,6 @@ h1:hover {
 	font-weight: bold;
 }
 
-#buttonAdd:hover,
 #btnDark:hover,
 #btn1:hover,
 #btn2:hover,
