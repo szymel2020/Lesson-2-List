@@ -140,7 +140,7 @@ h1:hover {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: bold;
 }
-
+#buttonAdd:hover,
 #btnDark:hover,
 #btn1:hover,
 #btn2:hover,
@@ -164,15 +164,13 @@ h1:hover {
 }
 
 footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-direction: row;
+	height: auto;
+	width:100%;
 	text-align: center;
 	font-size: .12em;
 	margin: .82em;
-	padding: .1em;
-	width: 50em;
-	height: 1.3em;
+	padding: 1.1em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -181,3 +179,27 @@ footer {
 	letter-spacing: .48em;
 	word-spacing: .57em;
 }
+
+.signature {
+	font-size: .35em;
+	display:flex;
+	justify-content:space-around;
+	text-align:center;
+	word-spacing: normal;
+	letter-spacing: normal;
+}
+
+@media only screen and (max-width: 1200px) {
+	body {
+		display: flex;
+		flex-flow:column;
+	}
+	.text1 {
+		writing-mode: horizontal-tb;
+	}
+	footer {
+		width:auto;
+	}
+}
+
+
