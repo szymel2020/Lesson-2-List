@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson-2</title>
+	<link rel="stylesheet" href="Lesson-2.css">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body id="body">
+
+<p class="text1">This is a first Project of List</p>
+
+	<div class="containerLeft">
+		<button class="openList" id="openList">open list</button>
+		<form id="addForm">
+			<input type="text" id="inputAdd" placeholder="write something" />
+			<input type="submit"  id="buttonAdd" value="+"/>
+		</form>
+		<button id="btnDark" onclick="pushDark()">Purple/Light</button>
+		
+		<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+		<audio src="http://www.sololearn.com/uploads/audio.mp3" controls>button</audio>
+	</div>
+
+	<div id="headerTitle">
+		<h1>List</h1>
+
+		<div class="firstDiv">
+			<ul id="items" class="list-group">
+				<li class="list-group"><button id="btn4" class="btn btn-danger btn-sm float-right delete">x</button></li>
+			</ul>
+		</div>
+	</div>
+
+	<footer>copyright 26.11.2020 all rights reserved <p class=signature>made by Szymon Chała</p></footer>
+
+	<script src="Lesson-2.js"></script>
+</body>
+
+</html>
